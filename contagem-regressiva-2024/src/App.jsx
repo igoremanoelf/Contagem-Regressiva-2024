@@ -8,12 +8,12 @@ import useCountdown from './hooks/useCountdown'
 import './App.css'
 
 function App() {
-  const [day, hour, minute, second] = useCountdown("Jan 1, 2024 00:00:00")
+  const [day, hour, minute, second] = useCountdown("Jan 1, 2025 00:00:00")
 
   return (
     <div className='App' style={{backgroundImage: `url(${NewYear})`}}>
       <div className="container">
-        <Title title='Contagem regressiva para 2024'/>
+        <Title title='Contagem Regressiva para 2025'/>
         <div className='countdown-container'>
           <Counter title='Dias' number={day}/>
           <Counter title='Horas' number={hour}/>
